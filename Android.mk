@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter plato,$(TARGET_DEVICE)),)
+ifneq ($(filter plato xaga,$(TARGET_DEVICE)),)
 
 endif

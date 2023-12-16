@@ -6,25 +6,43 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/mt6895-common
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_adapt.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_rtp.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_socketwrapper.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_service.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_wrapper.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsignal.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsink.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsource.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_cap.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_capenc.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvt_avsync.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
+    vendor/xiaomi/mt6895-common/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/chipinfo:$(TARGET_COPY_OUT_VENDOR)/bin/chipinfo \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/conninfra_loader:$(TARGET_COPY_OUT_VENDOR)/bin/conninfra_loader \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-shim-service-mtk \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mms@1.6-service \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram@1.1-service \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/xiaomi/mt6895-common/proprietary/vendor/bin/netdagent:$(TARGET_COPY_OUT_VENDOR)/bin/netdagent \
@@ -153,6 +171,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
@@ -169,6 +188,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -190,15 +210,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/wifi/passpointProfile.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/passpointProfile.conf \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/WIFI_RAM_CODE_soc7_0_1b_t_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc7_0_1b_t_1.bin \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/conninfra.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/conninfra.cfg \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/mali_csffw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw.bin \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/mali_csffw_reload.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw_reload.bin \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/soc7_0_ram_bt_1b_t_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_bt_1b_t_1_hdr.bin \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/soc7_0_ram_mcu_1b_t_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_mcu_1b_t_1_hdr.bin \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcares_naptr.so \
@@ -234,9 +245,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.mali.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
@@ -251,15 +262,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw_batch.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libapusys_edma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys_edma.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_video.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_high_dynamic_range_v5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range_v5.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_mf_superresolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_mf_superresolution.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
@@ -281,8 +283,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.n3d.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameraplatforminfoxiaomi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameraplatforminfoxiaomi.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcares_naptr.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
@@ -323,9 +323,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmialgo_ie_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_capture.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmispowerop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmispowerop.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
@@ -335,8 +332,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtk-fusion-ril-prop-vsim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-fusion-ril-prop-vsim.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkares.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_3rdcalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdcalibration.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_thirdparty.customzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customzone.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
@@ -384,7 +379,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvia-ril.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviamipc-ril.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libvoiprec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvoiprec.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libvow_ap_test_aa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_ap_test_aa.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libvow_ap_test_dd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvow_ap_test_dd.so \
@@ -396,149 +391,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxlog.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDR.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libSonyIMX519PdafWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX519PdafWrapper.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust_func.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaalservice.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiselector.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libapudcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapudcutils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.3a_isp.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.3a_isp.utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.afmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.afmgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.chdr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.feature_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.afassitmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.afassitmgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.cctsvr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.cctsvr.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.ctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ctrl.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.ircutdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ircutdrv.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.lensdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.lensdrv.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.lscMgrApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.lscMgrApi.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.oisdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.oisdrv.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.ozoomdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.ozoomdrv.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.policy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.policy.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.ae.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ae.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.ai3a_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ai3a_v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.awb_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.awb_v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.cac.mgr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.cac.mgr.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.dng.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.flash.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.flash.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.flicker.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.flicker.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.ir.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ir.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.lsctbl.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.lsctbl.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.nvram.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.nvram.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.sensor.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.sensor.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.strobe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.strobe.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.stt_v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.stt_v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.hal3a.v3.tone.mgr.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.tone.mgr.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halisp.TopCtrlMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TopCtrlMgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halisp.TuningDataProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TuningDataProvider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halisp.TuningDataProviderFactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.TuningDataProviderFactory.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halisp.imp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.imp.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halisp.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.plugin.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halisp.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halsensor.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.isptuning.v4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.isptuning.v4l2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.peripheralcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.peripheralcontroller.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.tuningcachemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.tuningcachemgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.utils.sensorprovider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.vhdr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam_ipc_hal3a_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_hal3a_client.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam_ipc_halisp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_halisp_client.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcam_ipc_nvbuf_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_ipc_nvbuf_client.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamalgo.aibc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.aibc.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamalgo.vaidepth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vaidepth.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsf.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamera.custom.af_assist_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.custom.af_assist_buf_mgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customae.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamera.customaf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customaf.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcamera.customawb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customawb.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.3a.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.isp.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.sensors.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.camera_calibration.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera_calibration.core.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.eis.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.flashlight.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.imgsensor.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.imgsensor.core.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpframework.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnl.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk_drvb.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.debugwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.debugwrapper.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.capture.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.depthmap.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.featurepipe.p2g.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.p2g.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.streaming.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.featurepipe.vsdof.wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.vsdof.wrapper.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.logicalcaminfoprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.logicalcaminfoprovider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.logicalmodule.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_android_zslprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_android_zslprocessor.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_convertor.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_provider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_camcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camcontroller.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_camcoordinator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camcoordinator.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_camctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_camctrl.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_coredev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_coredev.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_custzone.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_custzone.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_debugutils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_devicemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_devicemgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_exif.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_faceResultHandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_faceResultHandler.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal3a_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal3a_provider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_android_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_app_cbadaptor.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_android_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_common.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_android_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_device.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_android_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_provider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_android_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_android_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_app.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_app_cbadaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_app_cbadaptor.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_device.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_devicesessionpolicy.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_featurepolicy.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_provider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_core_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_core_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_custom_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_custom_provider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_hidl_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_common.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_hidl_device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_device.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_hidl_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_provider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hal_hidl_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hal_hidl_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwnode.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hwutils_android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils_android.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_hwutils_poweronoffcontroller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils_poweronoffcontroller.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_imgbuf_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_imgbuf_v2.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_jsonconvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_jsonconvertor.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_mapping_mgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_metaconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metaconv.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metadata.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metastore.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_custom.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_packutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_packutils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline_fbm.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_capture.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_session.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-security.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-smvr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy_factory.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_pipemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipemgr.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_postprocprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_postprocprovider.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_prerelease.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_request_requlator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_request_requlator.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_sensorcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_sensorcontrol.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_simager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_simager.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_streamutils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_synchelper.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_thirdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.core.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_thirdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.customer.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_thirdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.mtk.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_thirdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_thirdparty.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_tuning_utils.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ulog.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_adapter_mgvi.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libneuron_runtime.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_runtime.5.so \
@@ -590,15 +449,101 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.6.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.7.so \
     vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.8.so \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.9.so
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.9.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 PRODUCT_PACKAGES += \
+    ImsService \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
     gnss-mtk \
     gnss@2.1-service \
+    manifest_android.hardware.drm@1.4-service.widevine \
     manifest_apuware_apusys \
     manifest_apuware_hmp \
     manifest_apuware_utils \
     manifest_media_c2_V1_1_default \
     vendor.mediatek.hardware.neuropilot.agent@1.0-service
+
+ifeq ($(BOARD_TEE_VARIANT),beanpod)
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/fidoca_isee:$(TARGET_COPY_OUT_VENDOR)/bin/fidoca_isee \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@1.0-service.beanpod \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.microtrust.hardware.se@1.0-service \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.microtrust.hardware.soter@1.0-service \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.microtrust.hardware.thh@2.0-service \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/mlipayd_isee@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd_isee@1.1 \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/mtd_isee@1.3:$(TARGET_COPY_OUT_VENDOR)/bin/mtd_isee@1.3 \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/bin/teei_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/teei_daemon \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.se@1.0-service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/jcos_nq_client-v1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/jcos_nq_client-v1.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_gp_client.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimsg_log.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmfido_isee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfido_isee.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmlipay_isee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay_isee.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmlipay_isee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay_isee@1.1.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmt_isee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt_isee.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libmt_isee@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt_isee@1.3.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libteeclientjni_isee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni_isee.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libteeclientjni_isee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni_isee@1.1.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libteei_daemon_vfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteei_daemon_vfs.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthha.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libthhclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthhclient.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlcWidevineModularDrm.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liburee_meta_drmkeyinstall.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvkeybox.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/ls_nq_client-v1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ls_nq_client-v1.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/se_nq_extn_client-v1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_nq_extn_client-v1.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/secure_element-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/secure_element-impl.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.microtrust.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.microtrust.hardware.soter@1.0.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/vendor.microtrust.hardware.thh@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.microtrust.hardware.thh@2.0.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/lib64/wechat.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/wechat.beanpod.so \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/0102030405060708090a0b0c0d0e0f10.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/020f0000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/020f0000000000000000000000000000.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/06090000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/06090000000000000000000000000000.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/08010203000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/08010203000000000000000000000000.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/08030000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/08030000000000000000000000000000.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/08110000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/08110000000000000000000000000000.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/14498ace2a8f11e880c8509a4c146f4c.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/14498ace2a8f11e880c8509a4c146f4c.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/3d08821c33a611e6a1fa089e01c83aa2.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/3d08821c33a611e6a1fa089e01c83aa2.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/40188311faf343488db888ad39496f9a.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/40188311faf343488db888ad39496f9a.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/8888c03fc30c4dd0a319ea29643d4d4b.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/8888c03fc30c4dd0a319ea29643d4d4b.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/d78d338b1ac349e09f65f4efe179739d.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/d78d338b1ac349e09f65f4efe179739d.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
+
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-service.beanpod \
+    android.hardware.security.secureclock-service.beanpod \
+    android.hardware.security.sharedsecret-service.beanpod \
+    manifest.microtrust \
+    manifest_wechat
+endif
