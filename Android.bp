@@ -5,6 +5,96 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "ImsService",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentOKGoogleRISCV",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleRISCV",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+dex_import {
+	name: "mediatek-common",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-framework",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-framework.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-base",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-ims-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-common",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-ims-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-extension-plugin",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
+}
+
+dex_import {
+	name: "mediatek-telecom-common",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-base",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-common",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks-shim-service-mtk",
 	owner: "xiaomi",
@@ -36,6 +126,15 @@ prebuilt_etc_xml {
 	name: "gnss@2.1-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.4-service.widevine",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -81,6 +180,51 @@ prebuilt_etc_xml {
 	name: "vendor.mediatek.hardware.neuropilot.agent@1.0-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.keymint-service.beanpod",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.secureclock-service.beanpod",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.sharedsecret-service.beanpod",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest.microtrust",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest.microtrust.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_wechat",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_wechat.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
